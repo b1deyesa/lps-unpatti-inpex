@@ -30,14 +30,14 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	gap: 1em;
-	width: 400px;
+	width: 100%;
+	max-width: 400px;
 	padding: 1em 1.2em;
 	border-radius: .8em;
 	border: 1px solid $color-3;
 	background: $color-2;
 	.unpatti-logo {
-		width: 3em;
-		height: fit-content;
+		height: 3em;
 	}
 	.text {
 		display: flex;
@@ -59,8 +59,7 @@ body {
 		}
 	}
 	.inpex-logo {
-		width: 4em;
-		height: fit-content;
+		height: .7em;
 	}
 }
 
@@ -68,7 +67,8 @@ form {
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
-	width: 400px;
+	width: 100%;
+	max-width: 400px;
 
 	header {
 		font-family: "DM Serif Display", serif;
