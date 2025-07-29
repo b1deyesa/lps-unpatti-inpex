@@ -47,49 +47,49 @@ class Form extends Component
 
     public function next()
     {
-        // if ($this->page == 2) {
-        //     $this->validate([
-        //         'nama' => 'required',
-        //         'tempat_lahir' => 'required',
-        //         'tanggal_lahir' => 'required',
-        //         'kebangsaan' => 'required',
-        //         'status_pernikahan' => 'required',
-        //         'agama' => 'required',
-        //         'jenis_kelamin' => 'required',
-        //         'alamat' => 'required',
-        //         'kecamatan' => 'required',
-        //         'kabupaten' => 'required',
-        //         'no_telp' => 'required',
-        //     ]);
-        // } elseif ($this->page == 3) {
-        //     $this->validate([
-        //         'pendidikan_terakhir' => 'required',
-        //         'institusi' => 'required',
-        //         'tahun_kelulusan' => 'required'
-        //     ]);
-        // } elseif ($this->page == 4) {
-        //     $this->validate([
-        //         'pelatihan_diikuti' => 'required',
-        //     ]);
-        // } elseif ($this->page == 5) {
-        //     $this->validate([
-        //         'sertifikasi_dimiliki' => 'required',
-        //     ]);
-        // } elseif ($this->page == 6) {
-        //     $this->validate([
-        //         'pengalaman_bekerja' => 'required',
-        //     ]);
-        // } elseif ($this->page == 7) {
-        //     $this->validate([
-        //         'minat_kerja_lng' => 'required',
-        //     ]);
-        // } elseif ($this->page == 8) {
-        //     $this->validate([
-        //         'lingkungan_kerja' => 'required',
-        //         'bisa_kerja_luar_daerah' => 'required',
-        //         'minat_pelatihan' => 'required',
-        //     ]);
-        // }
+        if ($this->page == 2) {
+            $this->validate([
+                'nama' => 'required',
+                'tempat_lahir' => 'required',
+                'tanggal_lahir' => 'required',
+                'kebangsaan' => 'required',
+                'status_pernikahan' => 'required',
+                'agama' => 'required',
+                'jenis_kelamin' => 'required',
+                'alamat' => 'required',
+                'kecamatan' => 'required',
+                'kabupaten' => 'required',
+                'no_telp' => 'required',
+            ]);
+        } elseif ($this->page == 3) {
+            $this->validate([
+                'pendidikan_terakhir' => 'required',
+                'institusi' => 'required',
+                'tahun_kelulusan' => 'required'
+            ]);
+        } elseif ($this->page == 4) {
+            $this->validate([
+                'pelatihan_diikuti' => 'required',
+            ]);
+        } elseif ($this->page == 5) {
+            $this->validate([
+                'sertifikasi_dimiliki' => 'required',
+            ]);
+        } elseif ($this->page == 6) {
+            $this->validate([
+                'pengalaman_bekerja' => 'required',
+            ]);
+        } elseif ($this->page == 7) {
+            $this->validate([
+                'minat_kerja_lng' => 'required',
+            ]);
+        } elseif ($this->page == 8) {
+            $this->validate([
+                'lingkungan_kerja' => 'required',
+                'bisa_kerja_luar_daerah' => 'required',
+                'minat_pelatihan' => 'required',
+            ]);
+        }
         
         $this->page++;
     }
