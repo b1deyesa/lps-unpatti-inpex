@@ -99,7 +99,7 @@
                     <x-input label="Jika berkeinginan terliba/bekerja, bidang pekerjaan apa yang diminati?" wire="bidang_pekerjaan_diminati" />
                 @endif
                 <x-input type="radio" label="Apakah bidang kerja yang anda minati tersebut adalah pekerjaan di darat (on shore) ataukah di laut (off shore)?" wire="lingkungan_kerja" :options="json_encode(['On shore' => 'On shore', 'Off shore' => 'Off shore'])" :required="true" />
-                <x-input type="radio" label="Apakah anda bersedia kerja di luar daerah?" wire="bisa_kerja_luar_daerah" :options="json_encode(['Ya', 'Tidak'])" :required="true" />
+                <x-input type="radio" label="Apakah anda bersedia kerja di luar daerah?" wire="bisa_kerja_luar_daerah" :options="json_encode([1 => 'Ya', 0 => 'Tidak'])" :required="true" />
             </div>
             @break
         @case(8)
