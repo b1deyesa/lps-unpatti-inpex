@@ -36,7 +36,7 @@
             <div class="container">
                 <x-input label="Nama Lengkap" wire="nama" :required="true" />
                 <x-input label="Tempat Lahir" wire="tempat_lahir" :required="true" />
-                <x-input label="Tanggal Lahir" wire="tanggal_lahir" :required="true" />
+                <x-input type="date" label="Tanggal Lahir" wire="tanggal_lahir" :required="true" />
                 <x-input type="radio" label="Kebangsaan" wire="kebangsaan" :options="json_encode(['WNI' => 'WNI', 'WNA' => 'WNA'])" :required="true" />
                 <x-input type="radio" label="Status Pernikahan" wire="status_pernikahan" :options="json_encode(['Sudah Menikah' => 'Sudah Menikah', 'Belum Menikah' => 'Belum Menikah'])" :required="true" />
                 <x-input type="radio" label="Agama" wire="agama" :options="json_encode(['Islam' => 'Islam', 'Kristen Protestan' => 'Kristen Protestan', 'Kristen Katolik' => 'Kristen Katolik', 'Hindu' => 'Hindu', 'Budha' => 'Budha', 'Konghucu' => 'Konghucu', 'Lainnya' => 'Lainnya'])" :list="true" :required="true" />
