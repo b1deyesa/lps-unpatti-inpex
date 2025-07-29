@@ -180,6 +180,7 @@
             <div class="closing">
                 <h2 class="title">Terima Kasih</h2>
                 <p>Terima kasih atas kesediaan Bapak/Ibu meluangkan waktu untuk mengisi kuesioner ini. Partisipasi Anda sangat berarti dalam upaya kami memetakan potensi tenaga kerja Maluku</p>
+                <button type="button" onclick="window.location.reload();" class="outline" style="align-self: end">Selesai</button>
             </div>
             @break
     @endswitch

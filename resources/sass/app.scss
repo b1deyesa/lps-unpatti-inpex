@@ -210,21 +210,22 @@ form {
 		margin-top: auto;
 		padding-top: 2em;
 
-		button {
-			font-size: .9em;
-			width: 8em;
-			padding: 0.4em 1em;
-			border: 1px solid $color-4;
-			border-radius: 0.5em;
-			background: $color-4;
-			color: #fff;
-            cursor: pointer;
+	}
+}
 
-			&.outline {
-				background: transparent;
-				color: $color-4;
-			}
-		}
+button {
+	font-size: .9em;
+	width: 8em;
+	padding: 0.4em 1em;
+	border: 1px solid $color-4;
+	border-radius: 0.5em;
+	background: $color-4;
+	color: #fff;
+	cursor: pointer;
+
+	&.outline {
+		background: transparent;
+		color: $color-4;
 	}
 }
 
@@ -250,5 +251,7 @@ table {
 }
 
 .closing {
+	display: flex;
+	flex-direction: column;
 	margin: auto
 }
