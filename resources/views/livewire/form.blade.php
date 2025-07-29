@@ -166,7 +166,7 @@
                     @endif
             
                     <tr><td>Lingkungan Kerja Diminati</td><td>:</td><td>{{ $lingkungan_kerja }}</td></tr>
-                    <tr><td>Bersedia Kerja Luar Daerah</td><td>:</td><td>{{ $bisa_kerja_luar_daerah }}</td></tr>
+                    <tr><td>Bersedia Kerja Luar Daerah</td><td>:</td><td>{{ $bisa_kerja_luar_daerah ? 'Ya' : 'Tidak' }}</td></tr>
                     <tr><td>Minat Pelatihan</td><td>:</td><td>{{ $minat_pelatihan ? 'Ya' : 'Tidak' }}</td></tr>
                     @if($minat_pelatihan)
                         <tr><td>Jenis Pelatihan Diminati</td><td>:</td><td>{{ $jenis_pelatihan_diminati }}</td></tr>

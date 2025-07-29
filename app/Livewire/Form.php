@@ -138,7 +138,7 @@ class Form extends Component
             'desa' => $this->desa,
             'kecamatan' => $this->kecamatan,
             'kabupaten' => $this->kabupaten,
-            'no_telp' => $this->no_telp,
+            'no_telp' => "'".$this->no_telp,
             'pendidikan_terakhir' => $this->pendidikan_terakhir,
             'institusi' => $this->institusi,
             'tahun_kelulusan' => $this->tahun_kelulusan,
@@ -167,7 +167,6 @@ class Form extends Component
 
         $this->page++;
     }
-
     
     public function render()
     {
